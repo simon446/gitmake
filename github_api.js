@@ -79,7 +79,13 @@ class GithubInit {
         await renameCase('README.md');
         try {await writeFileAsync('README.md', `# ${name}
 `, { flag: "wx" });} catch (err) {}
-        if (ssh_url) this.cmd(`git init && git add README.md && git commit -m "Initial commit" && git remote add origin ${ssh_url} && git push -u origin master`);
+        if (ssh_url) {
+            await this.cmd(`git init`);
+            await this.cmd(`git add README.md`);
+            await this.cmd(`git commit -m "Initial commit"`);
+            await this.cmd(`git remote add origin ${ssh_url}`);
+            await this.cmd(`git push -u origin master`);
+        }
         else throw new Error('Cannot create remote repo. Check if repo already exists.');
     }
 
