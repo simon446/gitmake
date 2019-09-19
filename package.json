@@ -1,0 +1,27 @@
+{
+  "name": "gitmake",
+  "version": "1.0.0",
+  "description": "Initialize github repository automatically",
+  "main": "index.js",
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/froadus/gitmake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/froadus/gitmake/issues"
+  },
+  "homepage": "https://github.com/froadus/gitmake#readme",
+  "bin": {
+    "gitmake": "./index.js"
+  }
+}
