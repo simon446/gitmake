@@ -1,6 +1,6 @@
 {
   "name": "gitmake",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Initialize github repository automatically",
   "main": "index.js",
   "dependencies": {
